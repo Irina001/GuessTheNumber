@@ -171,9 +171,10 @@ Considering the `compGuess()` conditional
 Stretch goals should not be attempted until previous tickets have been completed and tested.
 
 ## Ticket `#U2_07`
-- Inclue a `project-details.md` to the **root** directory.
+- Update the `README.md` in the **root** directory.
   - Detail the concept of this project in psuedo code within the document.
   -  **[Pseudo Code Article](https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/)**
+  -  [What is a README file?](https://www.mygreatlearning.com/blog/readme-file/)
 - Deploy this project through **GitHub Pages**.
    -  Update your **README.md** with a hyperlink to the deployed URL.
 - Provide a **Error Handling** condition within the `randomNumber()` function that will respond with a "Please input a number between 1 and 100" if a user does not provide a value.

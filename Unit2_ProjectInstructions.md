@@ -1,5 +1,7 @@
 # Unit 2 Project
 ## Guess the Number
+## Project Rubric
+[Guess the Number Rubric](https://docs.google.com/spreadsheets/d/17eXV0FTpW-75rh2MVsmuZ2kCPMThbcEaiukg4C2M3iM/edit?usp=sharing)
 
 ### Concept:
 In this project, you will need to utilize the fundamental aspects of JavaScript by using **loops**, **conditionals**, **variables**, and **functions** to accomplish this task.

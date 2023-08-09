@@ -6,9 +6,16 @@
 function randomNumber(userGuess, computersNumber) {
 
     // YOUR CODE BELOW
-
-
-let test = "test";
+        if(userGuess > 100 || userGuess<1)
+                return "Please input a number between 1 and 100";
+                
+        else if (userGuess > computersNumber)
+                return "Higher";
+                
+        else if (userGuess < computersNumber)
+                return "Lower";
+                
+        else return `The number was ${userGuess}`;
     // YOUR CODE ABOVE
 };
 

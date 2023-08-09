@@ -8,8 +8,7 @@ function randomNumber(userGuess, computersNumber) {
     // YOUR CODE BELOW
 
 
-
-
+let test = "test";
     // YOUR CODE ABOVE
 };
 

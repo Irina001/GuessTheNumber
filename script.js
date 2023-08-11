@@ -55,3 +55,8 @@ function compGuess(reply) {
 
 }
 
+
+let createGuess = () => {
+    currentNumber = Math.random();
+    return currentNumber;
+}

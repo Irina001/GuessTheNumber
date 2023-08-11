@@ -53,6 +53,18 @@ function compGuess(reply) {
     This should return a string indicating the computers response.
     */
 
+    switch(reply){
+        case "Lower":
+            return `Your number is lower? Is it ${currentNumber}?`;
+        
+        case "Higher":
+            return `Your number is higher? Is it ${currentNumber}?`;
+        
+        case "That's it!":
+            return `I knew it was ${currentNumber}!`;
+
+    }
+
 }
 
 

@@ -73,8 +73,10 @@ function compGuess(reply) {
 
 }
 
-
+//Ticket #U2_03 starts 
 let createGuess = () => {
     currentNumber = Math.random();
     return currentNumber;
 }
+
+//Ticket #U2_03 ends

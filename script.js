@@ -36,8 +36,12 @@ function randomNumber(userGuess, computersNumber) {
     You are not limited to just these functions. Feel free to create a new function that may be called to help manage the flow of your code.
 */
 
+//Code for Ticket #U2_02 begins
+
+//created a variable called currentnumber and assign it a value of 1
 let currentNumber = 1;
 
+//return a string that states, "Is your number <currentNumber>?" 
 function startCompGuess(num) {
     // This should return a string that denotes the first guessed number
 
@@ -45,6 +49,8 @@ function startCompGuess(num) {
     return `Is your number ${currentNumber}?`
 
 }
+//Code for Ticket #U2_02 ends
+
 
 function compGuess(reply) {
     /* 
@@ -54,13 +60,13 @@ function compGuess(reply) {
     */
 
     switch(reply){
-        case "Lower":
+        case "lower":
             return `Your number is lower? Is it ${currentNumber}?`;
         
-        case "Higher":
+        case "higher":
             return `Your number is higher? Is it ${currentNumber}?`;
         
-        case "That's it!":
+        case "correct":
             return `I knew it was ${currentNumber}!`;
 
     }

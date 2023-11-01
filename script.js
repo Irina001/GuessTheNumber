@@ -3,6 +3,7 @@
     - It should be compared to a variable named: numberToGuess
 */
 
+
 function randomNumber(userGuess, computersNumber) {
 
     // YOUR CODE BELOW
@@ -41,6 +42,7 @@ function randomNumber(userGuess, computersNumber) {
 //created a variable called currentnumber and assign it a value of 1
 let currentNumber = 1;
 
+
 //return a string that states, "Is your number <currentNumber>?" 
 function startCompGuess(num) {
     // This should return a string that denotes the first guessed number
@@ -49,8 +51,24 @@ function startCompGuess(num) {
     return `Is your number ${currentNumber}?`
 
 }
-//Code for Ticket #U2_02 ends
 
+let lowest;
+let highest;
+
+let createGuess = () => {
+    if (currentNumber <= highest ){
+        while (currentNumber <= highest ){
+                currentNumber = Math.round(Math.random()*100+1);
+            };
+    return currentNumber;
+    }
+     if (currentNumber >= lowest){
+        while (currentNumber >= lowest ){
+                currentNumber=Math.round(Math.random()*100+1);
+            };
+    return currentNumber;
+    }
+}
 
 function compGuess(reply) {
     /* 
@@ -61,10 +79,12 @@ function compGuess(reply) {
 
     switch(reply){
         case "lower":
-            return `Your number is lower? Is it ${currentNumber}?`;
+            lowest=currentNumber;
+            return `Your number is lower? Is it ${createGuess()}?`;
         
         case "higher":
-            return `Your number is higher? Is it ${currentNumber}?`;
+            highest=currentNumber;
+            return "Your number is higher? Is it " + createGuess() + "?";
         
         case "correct":
             return `I knew it was ${currentNumber}!`;
@@ -73,10 +93,4 @@ function compGuess(reply) {
 
 }
 
-//Ticket #U2_03 starts 
-let createGuess = () => {
-    currentNumber = Math.random();
-    return currentNumber;
-}
 
-//Ticket #U2_03 ends
